@@ -1,0 +1,105 @@
+body {
+  color: #333;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header, footer {
+  color: #fff;
+  text-align: center;
+  background: #00529b;
+  padding: 1em;
+}
+
+h1, h2 {
+  margin: .5em 0;
+}
+
+main {
+  max-width: 960px;
+  margin: auto;
+  padding: 1em;
+}
+
+section {
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 2em;
+  padding: 1em;
+  box-shadow: 0 0 5px #0000001a;
+}
+
+#headtohead-search {
+  margin-bottom: 1em;
+}
+
+#headtohead-search input[type="text"] {
+  width: 40%;
+  margin-right: .5em;
+  padding: .5em;
+  font-size: 1em;
+}
+
+#headtohead-search button {
+  color: #fff;
+  cursor: pointer;
+  background: #00529b;
+  border: none;
+  padding: .5em 1em;
+  font-size: 1em;
+}
+
+#headtohead-search button:hover {
+  background: #003f73;
+}
+
+.head-to-head-fixture {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: .5em;
+  padding-bottom: .5em;
+}
+
+.head-to-head-fixture:last-child {
+  border-bottom: none;
+}
+
+#player-search {
+  margin-bottom: 1em;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: .5em;
+  font-size: 1em;
+}
+
+button {
+  color: #fff;
+  cursor: pointer;
+  background: #00529b;
+  border: none;
+  padding: .5em 1em;
+  font-size: 1em;
+}
+
+button:hover {
+  background: #003f73;
+}
+
+.match, .player {
+  border-bottom: 1px solid #ddd;
+  padding: .5em 0;
+}
+
+.match:last-child, .player:last-child {
+  border-bottom: none;
+}
+
+.favorite {
+  color: red;
+  cursor: pointer;
+  margin-left: 1em;
+}
+/*# sourceMappingURL=index.3a01df49.css.map */

@@ -1,0 +1,19 @@
+{
+    "name": "soccer-stats-app",
+    "version": "1.0.0",
+    "description": "A single-page soccer scores & stats application using the API-FOOTBALL API",
+    "main": "js/index.js",
+    "scripts": {
+        "start": "parcel index.html",
+        "build": "parcel build index.html"
+    },
+    "dependencies": {
+        "axios": "^1.7.9"
+    },
+    "devDependencies": {
+        "parcel": "^2.13.3"
+    },
+    "author": "",
+    "license": "ISC",
+    "keywords": []
+}

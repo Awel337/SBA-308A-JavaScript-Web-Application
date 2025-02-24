@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soccer Scores & Stats - API-FOOTBALL</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="./js/index.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Soccer Scores & Stats</h1>
+  </header>
+  <main>
+    <!-- Head-to-Head Fixtures Section -->
+    <section id="head-to-head">
+      <h2>Head-to-Head Fixtures</h2>
+      <div id="headtohead-search">
+        <input type="text" id="team1-input" placeholder="Enter first team (e.g., Arsenal)" />
+        <input type="text" id="team2-input" placeholder="Enter second team (e.g., Chelsea)" />
+        <button id="headtohead-btn">Get Head-to-Head</button>
+      </div>
+      <div id="headtohead-list">
+        <p>Enter two teams and click "Get Head-to-Head" to see fixtures.</p>
+      </div>
+    </section>
+    
+    <!-- Upcoming Matches Section -->
+    <section id="matches">
+      <h2>Upcoming Matches</h2>
+      <div id="match-list">
+        <p>Loading upcoming matches...</p>
+      </div>
+    </section>
+    
+    <!-- Player Stats Section -->
+    <section id="players">
+      <h2>Player Stats</h2>
+      <div id="player-search">
+        <input type="text" id="search-input" placeholder="Enter team name (e.g., Arsenal)" />
+        <button id="search-btn">Search</button>
+      </div>
+      <div id="player-list">
+        <p>Enter a team name and click search.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Soccer Stats App</p>
+  </footer>
+  
+</body>
+</html>
