@@ -1,8 +1,8 @@
-// ui.js - Module for UI rendering and event binding
+
 
 import { getUpcomingMatches, searchPlayers, getHeadToHeadFixtures, teamNameToId } from './api.js';
 
-// Render upcoming matches into the DOM
+
 export async function renderMatches() {
   const matchList = document.getElementById('match-list');
   matchList.innerHTML = '<p>Loading upcoming matches...</p>';
@@ -37,7 +37,7 @@ export async function renderMatches() {
   });
 }
 
-// Render players into the DOM based on the searched team name
+
 export async function renderPlayers(teamName) {
   const playerList = document.getElementById('player-list');
   playerList.innerHTML = '<p>Loading players...</p>';
@@ -49,7 +49,7 @@ export async function renderPlayers(teamName) {
   }
   
   playerList.innerHTML = '';
-  // Display the first 10 players as an example
+  
   playersData.slice(0, 10).forEach(playerObj => {
     const player = playerObj.player;
     const playerEl = document.createElement('div');
@@ -62,12 +62,12 @@ export async function renderPlayers(teamName) {
   });
 }
 
-// Render head-to-head fixtures based on user-selected teams
+
 export async function renderHeadToHead(team1Name, team2Name) {
   const headToHeadContainer = document.getElementById('headtohead-list');
   headToHeadContainer.innerHTML = '<p>Loading head-to-head fixtures...</p>';
   
-  // Convert team names to IDs using our mapping
+  
   const team1Id = teamNameToId[team1Name];
   const team2Id = teamNameToId[team2Name];
   
@@ -82,10 +82,10 @@ export async function renderHeadToHead(team1Name, team2Name) {
     return;
   }
   
-  // Sort fixtures in descending order by fixture date (most recent first)
+ 
   fixtures.sort((a, b) => new Date(b.fixture.date) - new Date(a.fixture.date));
   
-  // Limit to the 5 most recent fixtures
+  
   const limitedFixtures = fixtures.slice(0, 5);
   
   headToHeadContainer.innerHTML = '';
@@ -112,9 +112,9 @@ export async function renderHeadToHead(team1Name, team2Name) {
   });
 }
 
-// Bind UI events for both player search and head-to-head search
+
 export function bindUIEvents() {
-  // Player search event
+  
   const searchBtn = document.getElementById('search-btn');
   searchBtn.addEventListener('click', () => {
     const teamName = document.getElementById('search-input').value.trim();
@@ -123,7 +123,7 @@ export function bindUIEvents() {
     }
   });
   
-  // Head-to-head search event
+  
   const headToHeadBtn = document.getElementById('headtohead-btn');
   headToHeadBtn.addEventListener('click', () => {
     const team1Name = document.getElementById('team1-input').value.trim();

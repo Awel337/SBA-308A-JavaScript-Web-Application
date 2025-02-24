@@ -1,8 +1,8 @@
-// api.js - Module for API-FOOTBALL API calls using axios
+
 
 import axios from 'axios';
 
-// Common RapidAPI headers for API-FOOTBALL endpoints
+
 const RAPIDAPI_HEADERS = {
   'x-rapidapi-key': '4d296056f1mshc877506418da8c5p138eadjsnb4d6c8f18bf5',
   'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
@@ -29,11 +29,11 @@ export const teamNameToId = {
   "Chelsea": 49,
   "Liverpool": 40,
   "Manchester City": 50,
-  "Newcastle": 34,      // example additional team
-  "Everton": 36         // example additional team
+  "Newcastle": 34,      
+  "Everton": 36         
 };
 
-// Search for players by team name; converts team name to team ID
+
 export async function searchPlayers(teamName) {
   const teamId = teamNameToId[teamName];
   if (!teamId) {
@@ -52,7 +52,7 @@ export async function searchPlayers(teamName) {
   }
 }
 
-// Fetch head-to-head fixtures using API-FOOTBALL for two teams (team1 and team2 IDs)
+
 export async function getHeadToHeadFixtures(team1Id, team2Id) {
   try {
     const response = await axios.get('https://api-football-v1.p.rapidapi.com/v3/fixtures/headtohead', {
