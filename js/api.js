@@ -1,6 +1,6 @@
 
 
-import axios from 'axios';
+import axios from 'https://esm.sh/axios';
 
 
 const RAPIDAPI_HEADERS = {
